@@ -1,0 +1,47 @@
+.banner {
+  display: flex;
+}
+.banner__content {
+  padding-top: clamp(31px, 6vw, 61px);
+  width: 100%;
+  text-align: center;
+  background-color: var(--accent-color);
+  padding-bottom: 25px;
+}
+.banner__logo {
+  width: 138px;
+  height: 15px;
+  fill: var(--banner-color);
+  margin-bottom: clamp(14px, 4vw, 24px);
+}
+.banner__title {
+  max-width: 460px;
+  margin: 0 auto;
+  font-size: clamp(26px, 6vw, 36px);
+  line-height: 122%;
+  color: var(--banner-color);
+  margin-bottom: clamp(22px, 4vw, 32px);
+}
+.banner__link {
+  width: 272px;
+  height: 60px;
+  background-color: var(--banner-color);
+  border-radius: 88px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--main-color);
+  margin: 0 auto;
+  transition: background-color ease 0.2s;
+  &:focus {
+    border: var(--banner-focus);
+  }
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      background-color: var(--banner-hover);
+    }
+  }
+  &:active {
+    background-color: var(--banner-active);
+  }
+}

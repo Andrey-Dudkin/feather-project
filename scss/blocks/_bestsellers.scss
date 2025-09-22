@@ -1,0 +1,64 @@
+.bestsellers {
+  padding: clamp(50px, 14vw, 112px) 0;
+}
+.bestsellers__title {
+  text-align: center;
+  margin-bottom: clamp(27px, 5vw, 57px);
+}
+.bestsellers__body {
+  display: flex;
+  justify-content: center;
+  column-gap: 4px;
+  row-gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: clamp(25px, 5vw, 55px);
+}
+.bestsellers-card {
+  width: 233px;
+  min-height: 430px;
+  background-color: var(--bestsellers-bg-card);
+}
+.bestsellers-card__img {
+  padding-top: 40px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 31px;
+}
+.bestsellers-card__title {
+  font-size: 18px;
+  line-height: 156%;
+  text-align: center;
+  margin-bottom: 9px;
+}
+.bestsellers-card__prices {
+  max-width: 128px;
+  margin: 0 auto;
+  font-size: 17px;
+  line-height: 165%;
+  text-align: center;
+}
+.bestsellers-card__prices-rent {
+  color: var(--accent-color);
+}
+.bestsellers-card__prices-buy {
+  color: var(--price-color);
+}
+.bestsellers__link {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  line-height: 156%;
+  color: var(--accent-color);
+  transition: color ease 0.2s;
+  &:focus {
+    border: var(--focus);
+  }
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      color: var(--link-hover-color);
+    }
+  }
+  &:active {
+    color: var(--link-active-color);
+  }
+}

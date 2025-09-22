@@ -1,0 +1,62 @@
+.reviews {
+  padding-bottom: clamp(50px, 14vw, 176px);
+}
+
+.reviews__title {
+  text-align: center;
+  margin-bottom: clamp(25px, 5vw, 55px);
+}
+
+.reviews__content {
+  width: calc(50% + 50vw);
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.review--first {
+  border: var(--card-border-orange);
+  box-shadow: var(--reviews-card-shadow-mediumpurple);
+}
+.review--second {
+  border: var(--card-border-blue);
+  box-shadow: var(--reviews-card-shadow-yellow);
+}
+.review--third {
+  border: var(--card-border-black);
+  box-shadow: var(--reviews-card-shadow-aquamarine);
+}
+.review--second .review__text {
+  max-width: 310px;
+}
+.review--third .review__text {
+  max-width: 255px;
+}
+.review {
+  width: clamp(290px, 30vw, 366px);
+  min-height: 254px;
+  background-color: var(--card-bg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-grow: 1;
+  border-radius: var(--card-border-radius);
+  padding: clamp(18px, 4vw, 34px);
+  padding-right: 15px;
+}
+.review__img-star {
+  margin-bottom: clamp(12px, 2vw, 26px);
+}
+.review__text {
+  font-size: 18px;
+  line-height: 156%;
+  margin-bottom: clamp(15px, 2vw, 30px);
+}
+.review__text-span {
+  text-transform: uppercase;
+}
+.review__user {
+  font-size: 16px;
+  line-height: 150%;
+  margin-top: auto;
+}
