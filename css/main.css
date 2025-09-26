@@ -459,6 +459,7 @@
 }
 
 .reviews {
+  padding-top: clamp(50px, 14vw, 143px);
   padding-bottom: clamp(50px, 14vw, 176px);
 }
 
